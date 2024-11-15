@@ -1,0 +1,8 @@
+<%= form_with model: @song do |f| %>
+  <%= f.text_field :title %>
+  <%= f.submit %>
+<% end %>
+<form action="/song/2" method="patch">
+  <input type="text" name="song[title]" value="Hey Jude"/>
+  <input type="submit" value="Update song"/>
+</form>
